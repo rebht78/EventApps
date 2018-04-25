@@ -1,0 +1,53 @@
+#mainmenu
+{
+  display:block;
+  height:50px;
+  float:clear;
+}
+#loaddiv
+{
+  display:block;
+  padding-top:5px;
+}
+#errordiv
+{
+  display:none;
+}
+.button
+{
+  background-color:#008CBA;
+  color:white;
+  text-align:center;
+  cursor:pointer;
+  float:left;
+    text-decoration:none;
+  border:1px solid white;
+  -webkit-transition-duration:0.4s;
+  transition-duration:0.4s;
+}
+.form-group.required .control-label::after
+{
+  content:"*";
+  color:red;
+}
+.button:hover
+{
+  background-color:white;
+  color:#008CBA;
+  border:1px solid #008CBA;
+  text-decoration:none;!important
+}
+ul
+{
+  list-style-type:none;
+}
+li
+{
+  float:left;
+
+}
+a
+{
+  margin:5px;
+  padding:5px;
+}
