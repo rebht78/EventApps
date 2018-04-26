@@ -1,6 +1,22 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+// configuring mongoose
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/eventdb');
+
+// creating schema
+var Schema = mongoose.Schema;
+
+var eventSchema = new Schema(
+  {
+    title:String,
+    location:String,
+    startdate:String,
+    enddate:String
+  }
+);
+
 
 
 var event = {
